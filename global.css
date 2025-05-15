@@ -76,7 +76,7 @@ body {
 }
 
 /*PEQUENA CAIXA ONDE SE LOCALIZA OS PONTOS DO USUÁRIO*/
-.pontos {
+#reset{
     background-color: white;
     position: absolute;
     top:90%;
@@ -95,4 +95,6 @@ body {
 
     text-align: center;
     font-size: 15px;
+
+    cursor: pointer;
 }

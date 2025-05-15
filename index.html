@@ -13,7 +13,7 @@
 
         <h2 id="question"> A questão vai aqui </h2>
         <!--CAIXA QUE CONTÉM OS BOTÕES DE RESPOSTA.-->
-        <div class="respostas">
+        <div class="respostas" id="box">
             <button id="resposta1" class="buttons"></button>
             <button id="resposta2" class="buttons"></button>
             <button id="resposta3" class="buttons"></button>
@@ -21,10 +21,13 @@
         </div>
     </div>
 
-    <!--CAIXA PRINCIPAL DO SITE-->
-    <div class="pontos">
-        <p id="pontuacao">pontos</p>
-    </div>
+    <!--Botaão para voltar o quiz do zero-->
+    <button id="reset">Resetar</button>
+
+    <audio src="src/sons/som-certo.mp3" id="somCorreto"></audio>
+    <audio src="src/sons/som-errado.mp3" id="somErrado"></audio>
+    <audio src="src/sons/parabens.mp3" id="final-feliz"></audio>
+    <audio src="src/sons/tentenovamente.mp3" id="final-triste"></audio>
 
     <script src="script.js"></script>
 </body>
