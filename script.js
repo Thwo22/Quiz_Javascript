@@ -46,6 +46,7 @@ function mostrarQuestao(index) {
 
     [campoResposta1, campoResposta2, campoResposta3, campoResposta4].forEach(btn => {
         btn.style.backgroundColor = "";
+        btn.style.color = ""
         btn.disable = false;
     });
 }
@@ -60,11 +61,14 @@ function verificarResposta(respostaEscolhida, botaoClicado) {
     const botaoCorreto = [campoResposta1, campoResposta2, campoResposta3, campoResposta4][questao.correta];
 
     if (respostaEscolhida === questao.correta) {
-        botaoClicado.style.backgroundColor = "green";
+        botaoClicado.style.backgroundColor = "#4CAF50";
+        botaoClicado.style.color = "white";
         acertos++;
     } else {
-        botaoClicado.style.backgroundColor = "red";
-        botaoCorreto.style.backgroundColor = "green";
+        botaoClicado.style.backgroundColor = "#FF0000";
+        botaoClicado.style.color = "white";
+        botaoCorreto.style.backgroundColor = "#4CAF50";
+        botaoCorreto.style.color = "white";
     }
 
     [campoResposta1, campoResposta2, campoResposta3, campoResposta4].forEach(btn => btn.disabled = false)
