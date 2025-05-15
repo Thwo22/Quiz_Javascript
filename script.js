@@ -9,9 +9,8 @@ const somRespostaCerta = document.getElementById("somCorreto");
 const somRespostaErrada = document.getElementById ("somErrado");
 const acertouMais = document.getElementById("final-feliz");
 const acertouMenos = document.getElementById("final-triste");
-
-
 const containerDeRepostas = document.getElementById("box");
+
 const imagemHappyEnd = document.createElement("img");
 imagemHappyEnd.src = "src/imagens/finalizado.jpg";
 imagemHappyEnd.alt = "parabens-foto";
