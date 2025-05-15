@@ -1,0 +1,89 @@
+/*RESET DOS VALORES GLOBAIS PADRÕES DA PÁGINA*/
+body {
+    box-sizing: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(24, 24, 24);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*ESTILIZAÇÃO DO CONTAINER PRINCIPAL DO SITE*/
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 1.5rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px black;
+}
+
+/*ESTILIZAÇÃO DO TEXTO QUESTÃO*/
+#question {
+
+}
+
+/*ESTILIZAÇÃO DA CAIXA AZUL COM OS BOTÕES DE RESPOSTAS*/
+.respostas {
+    background-color:#1c4484
+
+;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 30em;
+    height: 15em;
+    padding: 1.5rem;
+
+}
+
+/*ESTILIZAÇÃO DOS BOTÕES DE RESPOSTA*/
+.buttons {
+    all: unset;
+    background-color: white;
+    cursor: pointer;
+    margin: auto;
+    width: 14em;
+    max-width: 200px;
+    height: 40px;
+}
+
+/*ESTILIZAÇÃO DOS BOTÕES DE RESPOSTA COM O MOUSE EM CIMA*/
+.buttons:hover{
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+/*PEQUENA CAIXA ONDE SE LOCALIZA OS PONTOS DO USUÁRIO*/
+.pontos {
+    background-color: white;
+    position: absolute;
+    top:90%;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100px;
+    height: 40px;
+
+    border-radius: 8px;
+    border: solid 2px rgb(255, 217, 0);
+
+    text-align: center;
+    font-size: 15px;
+}
